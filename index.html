@@ -3,7 +3,9 @@
 <body>
 <h1>Raker's BloG<h1>
 <p>various crap.</p>
+<p>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h2>December 26th 2024</h2>
+-------------<p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 <h3>The New Flash Editor ""Flit"" and rambings about flash.</h3>
 <p>So. adobe flash is dead. Or is it really? No. It would seem that adobe has killed off future  development on their end (unless you count handing AIR to HARMAN, or them being forced to update
 the player even still in china, (see also clean flash for china players beyond 32)). But that hasn't really seemed to stop anyone! Recently, as in within the past 4 years now, whos counting anyway,
@@ -17,7 +19,8 @@ well, it seems that the old versions of flash pro 8 up to cs6 (cs5.5) are floati
 <p>alright. thats enough 'padding'. You've got 2 options for making flash files now (yes, I am ignoring the flashpunks/flashdevelops, because that's half in the ground as it is. Bite me.)</p>
 <h4> JPEXS's FFDEC</h4>
 <p>so lately, as of may '23 FFDEC can create new empty SWFs for you, and they've had an Actionscript editor in there since the start, so if you know raw code, type away then inject image data, etc etc
-using the existing ffdec tooling. </p>
+using the existing ffdec tooling. JPEXS themself has been a master genius of all things decompilation, and of flash in general. I am very thankful for their efforts and cannot stress their importance
+enough. There's also the recent ish addition of the simple editor mode that seems not very good at this time, but bears a certain resembelence to flash editors of old's interface. </p>
 <h4> flits editor</h4>
 <p> right. so it seems that a who I think is a bloke, named jonathan or thisisjonathan has created a seemingly wholely new editor. flits editor, or what I like to refer to as 'Flit's' is a very basic
 editor that can make a swf file, by the barest definition. its more of an assembly tool, you'll be having none of art creation within the editor, you must be putting your assets in your file manager
@@ -26,5 +29,42 @@ assume and hope without any 'robotic assistance', lets say, has done ass this th
 their first release on github was around the day of October 12th '24, and the response of their announcement on the ruffle (discord) forum was muted, from my perspective. oughtta have a bigger blast,
 but hey. the flash community has been burned, burned, burned and burnt. so many. times. and ol jonathan did quite a lot of emote reations, so there's hope. of course, this is december now, and
 there's not been any peep or code updates since that october day. I hope they continue it. be a shame to see it go like all the rest. thank you jonathan, for a better stab than most.</p>
+<h4>tutorial on how to use Flit's</h4>
+<h5>step one, get your hands on the preview build/pre release version of the software.</h5>
+<p>this is easy enough, provided you're here in the past. future people may have trouble finding it if its taken down, abandoned or lost in 50 years. there's a windows build and a linux build. and
+yer source codes, etc.</p>
+<h5>step two, extract the zip if you've got that version</h5>
+<p> no compilation tutorial here I'm afraid. none provided on the repo(might be one but I couldn't be arsed to find it) I've chosen the linux build because windows past 10 is such a pain, and you could argue 10 was too, but I won't. inside the zip is all your licences,
+ruffle(!), mtasc(!) and the other third parties licensed under apache. and of course the binary.</p>
+<h5>step three</h5>
+<p>after opening the program, you'll see new project, load project, and about. about just states a few times that it is the flits editor, and that its a prerelease version. I imagine that proper versioning
+schemes will come with final releases. hopefully you'll see more than the old adobe players would say. ideally we'll see dates, changelogs, and maybe a thanks page.
+pressing load project won't do much if you're just starting out, but maybe in the future when this will have been out for a few years, you'll be able to come across existing project files to load, but I'm
+here in '24 and I only know of 3 for sure: n0samu's, as they were testing it at some point after release, jonathan's, as there's a screenshot on the ruffle discord, and mine, after I figured it out and
+felt the need to document how I managed here. maybe some of the big ruffle maintainers have given it a shot. *wink*
+
+pressing new project takes you to step 4 </p>
+<h5>step four</h5>
+<p>before you're loaded to a new file, you need to select a directory where all the upcoming flash data will be stored. I reccomend you making a new folder somewhere so as to not lose your flit projects
+among other files. keepin mind that each new project will need its own folder, as when creating the structure, flit's will make an assets folder, the, src folder, and the """FLAs""" (more on that later).
+just make a flit's folder, then a subfolder for every new project.
+anyway, width of the stage is set to 640 and height to  360 by default. framerate at 60. in comparison to flash cs5 and cs6 which set to 550 by 400 at 24fps. unique? maybe. it could be that adobe animate
+(post cs6, rip CS) has different defaults for no reason, or maybe the defaults are set to an older version of flash pro's defaults, I'm not sure atm. the editor does warn you when you make a new project
+in a non empty directory. </p>
+<h5>step five</h5>
+<p>when the new project opens, stage on the left, library on the right, and properties at the bottom. at the top, file, view,control, edit, help. Pro tip: use your file manager to navigate to *your
+custom directory* > *the movie you want to edit* > assets. put all your images, (I assume actionscript code files(as2 only)) and I assume sfx there BEFORE making any new movieclips. else you'll get
+mysterious errors that prevent exports or saving.
+really simple, make a new movieclip in the library, add an image from the right side where you'll see your assets, and navigate back to the main stage/scene, drag and drop the new library entry, and
+there you go, a simple movie/SWF.
+export from 'file' at the top or 'ctrl + E' and you'll then not get any notification it has exported. remember to save.
+the SWF'll be in your assets folder roundabouts.  </p>
+<h5>you did it!</h5>
+<h4>misc</h4>
+<p>the resulting SWF is decently slim. a bit slimmer  than the same swf made in CS5 more or less. might change if you have move than 1 image in a movieclip in your SWF, but hey. made  a somewhat
+identical SWF on CS5 and it was bigger. flits swfs seem to use ZLIB compression, unlike most very early swfs (CS5 uses zlib by default too) do. flits SWFs use AS2 at SWF 43, which I don't think you
+can usually get away with on adobe's. (CS5 has as2 at SWF 11)
+These basic SWFs will run just fine in nearly any flash projector. most of what you can do on FLITS is as2 and very simple, adobre flash player 9 can run it fine, but so does flash player 32,
+which I imagine 32 was the targeted, as I assume jon used adobe animate and ruffle as a reference. </p>
 </body>
 </html>
