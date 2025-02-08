@@ -14,6 +14,8 @@
 <li>your minimum stage size should be 215 x 138 pixels. this is the size used by many of flash's dialog boxes. like camera requests and storage requests. if its smaller, the docs say the request will fail.</li>
 <li>try and make your stage match a popular aspect ratio, like 4:3 and 16:9. you can do the math like this: decide your height (ie 720) and do 4 / 3 X 720 (= 960) so 960 is your width and 720 is your height.
 the smaller number should always be the height. (16:9 is 16 / 9 x 720 = 1280 ) </li>
+<li>Embed your font into your swf. in 20 years when adobe kills off flash, you'll want your SWF to be self contained and not be missing fonts or use fonts you didn't intend.</li>
+<li></li>
 </ul>
 <style>
 table, th, td {
@@ -35,23 +37,23 @@ table, th, td {
   </tr>
   <tr>
     <td>more ideal flash minimum</td>
-    <td>382.222222222x215</td>
-    <td>286.666666667x215</td>
-    <td>322.5x215</td>
-    <td>268.75x215</td>
+    <td>382. 222222222x215</td>
+    <td>286. 666666667x215</td>
+    <td>322. 5x215</td>
+    <td>268. 75x215</td>
     <td>215x215</td>
   </tr>
   <tr>
     <td>EGA-like</td>
-    <td>622.222222222x350</td>
-    <td>466.666666667x350</td>
+    <td>622. 222222222x350</td>
+    <td>466. 666666667x350</td>
     <td>525x350</td>
-    <td>437.5x350</td>
+    <td>437. 5x350</td>
     <td>350x350</td>
   </tr>
   <tr>
     <td>VGA ("480p") SD</td>
-    <td>853.333333333x480</td>
+    <td>853. 333333333x480</td>
     <td>640x480</td>
     <td>720x480</td>
     <td>600x480</td>
@@ -60,7 +62,7 @@ table, th, td {
   
   <tr>
     <td>SVGA (Super vga)</td>
-    <td>1066.666666667x600</td>
+    <td>1066. 666666667x600</td>
     <td>800x600</td>
     <td>900x600</td>
     <td>750x600</td>
@@ -68,7 +70,7 @@ table, th, td {
   </tr>
   <tr>
     <td>XGA</td>
-    <td>1365.333333333x768</td>
+    <td>1365. 333333333x768</td>
     <td>1024x768</td>
     <td>1152x768</td>
     <td>960x768</td>
