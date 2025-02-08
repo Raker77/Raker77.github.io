@@ -9,9 +9,11 @@
 <h1>Misc stuff</h1>
 <p>coming soon.</p>
 <h2>Random Flash tips</h2>
+<ul>
 <li>your minimum stage size should be 215 x 138 pixels. this is the size used by many of flash's dialog boxes. like camera requests and storage requests. if its smaller, the docs say the request will fail.</li>
 <li>try and make your stage match a popular aspect ratio, like 4:3 and 16:9. you can do the math like this: decide your height (ie 720) and do 4 / 3 X 720 (= 960) so 960 is your width and 720 is your height
 the smaller number should always be the height. (16:9 is 16 / 9 x 720 = 1280 ) </li>
+</ul>
 <style>
 table, th, td {
   border:1px solid black;
@@ -19,18 +21,21 @@ table, th, td {
 </style>
 <body>
 
-<h2>common resolutions and their equivalents in other aspect ratios.</h2>
+<h2>Common resolutions and their equivalents in other aspect ratios.</h2>
 
 <table style="width:100%">
   <tr>
     <th>resolution</th>
-    <th>math to get your width</th>
-    <th>ratio</th>
+    <th>16:9</th>
+    <th>4:3</th>
+    <th>5:4</th>
+    <th>3:2</th>
+    <th>1:1</th>
   </tr>
   <tr>
     <td>1920 x 1080</td>
     <td>16 / 9 x 1080 = 1920</td>
-    <td>16:9</td>
+    <td>4/3x1080 = 1440</td>
   </tr>
   <tr>
     <td>1440 x 1080</td>
