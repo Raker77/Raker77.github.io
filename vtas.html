@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>various stuff</title>
+<title>tidbits of info, flash or otherwise</title>
 </head>
 <body>
 <embed href="outpost-haven-1.3-fixed.swf" quality="high" wmode="direct"  width="640" height="480" name="gameObj" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer" />
@@ -32,7 +32,7 @@ table, th, td {
 
 <table style="width:100%">
   <tr>
-    <th>resolution</th>
+    <th>Resolution</th>
     <th>16:9 equivalent</th>
     <th>4:3 equivalent</th>
     <th>3:2 equivalent</th>
@@ -40,7 +40,7 @@ table, th, td {
     <th>1:1 equivalent</th>
   </tr>
   <tr>
-    <td>215 x 215</td>
+    <td>more ideal flash minimum</td>
     <td>382.222222222x215</td>
     <td>286.666666667x215</td>
     <td>322.5x215</td>
@@ -48,7 +48,7 @@ table, th, td {
     <td>215x215</td>
   </tr>
   <tr>
-    <td>640 x 350</td>
+    <td>EGA-like</td>
     <td>622.222222222x350</td>
     <td>466.666666667x350</td>
     <td>525x350</td>
@@ -56,7 +56,7 @@ table, th, td {
     <td>350x350</td>
   </tr>
   <tr>
-    <td>640 x 480</td>
+    <td>VGA ("480p") SD</td>
     <td>853.333333333x480</td>
     <td>640x480</td>
     <td>720x480</td>
@@ -65,7 +65,7 @@ table, th, td {
   </tr>
   
   <tr>
-    <td>800 x 600</td>
+    <td>SVGA (Super vga)</td>
     <td>1066.666666667x600</td>
     <td>800x600</td>
     <td>900x600</td>
@@ -73,15 +73,23 @@ table, th, td {
     <td>600x600</td>
   </tr>
   <tr>
-    <td>1024 x 768</td>
+    <td>XGA</td>
     <td>1365.333333333x768</td>
     <td>1024x768</td>
     <td>1152x768</td>
     <td>960x768</td>
     <td>768x768</td>
   </tr>
+   <tr>
+    <th>resolution</th>
+    <th>16:9 equivalent</th>
+    <th>4:3 equivalent</th>
+    <th>3:2 equivalent</th>
+    <th>5:4 equivalent</th>
+    <th>1:1 equivalent</th>
+  </tr>
   <tr>
-    <td>1280 x 720</td>
+    <td>HD</td>
     <td>1280x720</td>
     <td>960x720</td>
     <td>1080x720</td>
@@ -89,23 +97,7 @@ table, th, td {
     <td>720x720</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>1920 x 1080</td>
+    <td>FHD (Full HD)</td>
     <td>1920x1080</td>
     <td>1440x1080</td>
     <td>1620x1080</td>
@@ -113,13 +105,33 @@ table, th, td {
     <td>1080x1080</td>
   </tr>
   <tr>
-    <td>1440 x 1080</td>
-    <td>4 / 3 x 1080 = 1440</td>
-    <td>4:3</td>
+    <td>QHD (Quad HD)</td>
+    <td>2560x1440</td>
+    <td>1920x1440</td>
+    <td>2160x1440</td>
+    <td>1800x1440</td>
+    <td>1440x1440</td>
+  </tr>
+  <tr>
+    <td>UHD ("4K") (Ultra HD)</td>
+    <td>3840x2160</td>
+    <td>2880x2160</td>
+    <td>3240x2160</td>
+    <td>2700x2160</td>
+    <td>2160x2160</td>
+  </tr>
+  <tr>
+    <td>UHD ("8K")</td>
+    <td>7680x4320</td>
+    <td>5760x4320</td>
+    <td>6480x4320</td>
+    <td>5400x4320</td>
+    <td>4320x4320</td>
   </tr>
 </table>
 
-<p>you can find an aspect ratio by going backward. if you know your resolution is 300 x 240 and want the ratio, try plugging number in to the math. if you do 16 / 9 x 240 you get 426.6 (repeating) so thats not it. if you do 4 / 3 x 240 you get 320 x 240. so thats not right. (answer is 5:4).  </p>
+<p>when there is a decimal or fraction, its best to round up to the nearest pixel. (ie 853.33333333 should become 854.) this does mess up the ratio, but is close enough that it will
+work for screen and resolution purposes. It may be impossible to find fractions of pixels implemented in any display.</p>
 
 </body>
 
