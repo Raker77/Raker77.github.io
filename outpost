@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>swf</title>
+</head>
+<body>
+<p><a href="index.html">Back to Main</a></p>
+<embed src="outpost-haven-1.3-fixed.swf" quality="high" width="640" height="480" name="gameObj" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer"/>
+<h1>Outpost Haven</h1>
+<p>v1.3</p>
+<p>The owl men are here, and they're so very hungry.</p>
+<p>Gary Mason, former head of security, Outpost:Haven.</p>
+<p>A distress call wakes you and your crew mate from C-Sleep. A suspected rad leak at the nearby Outpost space station needs investigating. Don't worry, it should just be a quick jump in, jump out job...</p>
+<body>
+</body>
+<p>2025-09-05</p>
+<br>
+<br>
+<br>
+<br>
+<noscript>Hey, no javascript, nice. this site does not utilize javascript to serve content at the moment. I might add some in the future, but minimal at best. no blog posts will be behind use of
+javascript.</noscript>
+<hr>
+<hr>
+<h2>Privacy Policy</h2>
+<p>In no uncertain terms, this website does not intentionally collect any data from the user, and the author of this and other related pages does not intend, want, or request, in any way, any data from
+the user. If data is found to be collected, please contact github to request them to remove, expunge, or modify any data you believe to have been collected, as the author of this and related pages does not
+implement or request from github, any features that would collect any data.
+If any data is transmitted to the author or editor of this page anyway, it will be immediately and irrevocably be destroyed.</p>
+<p> This website does NOT permit the use of LLM, machine learning, or generative models to train upon its contents. Please be respectful.<p/>
+<hr>
+<hr>
+<h2>Ad-blocker and privacy extension policy</h2>
+<p> Please make sure your ad-blocker and privacy extensions REMAIN enabled.</p>
+<hr>
+</body>
+</html>
