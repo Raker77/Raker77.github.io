@@ -6,11 +6,35 @@
 <meta name="description" content="a webpage with a blog.">
 <meta name="author" content="Raker77">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  padding: 25px;
+  background-color: AntiqueWhite;
+  color: black;
+}
+
+.dark-mode {
+  background-color: DimGrey;
+  color: White;
+}
+</style>
+<style>
+    @media (min-width: 768px) {
+    .light/dark {
+      float: Right;
+    }
+    }
+  </style>
+
 <link rel="icon" type="image/x-icon" href="/images/1.svg">
 </head>
 <body>
 <h1>Raker's BloG.</h1>
 <p>various crap.yes it looks like junk, yes I suck at ht-ml.</p>
+
+<span class=light/dark"><button onclick="fewlinejsdarklightmode()">Toggle Light/Dark mode</button></span>
+
 <hr>
 <br>
 <br>
@@ -155,6 +179,14 @@ recognizable in comparison. good for readability, bad for cross compat I suppose
 <br>
 <hr>
 <footer>
+
+<script>
+function fewlinejsdarklightmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
 <noscript><mark>Hey, no javascript, nice. this site does not utilize javascript to serve content at the moment. I might add some in the future, but minimal at best. no blog posts will be behind use of
 javascript.</mark></noscript>
 <hr>
