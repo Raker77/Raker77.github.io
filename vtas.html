@@ -145,22 +145,60 @@ work for screen and resolution purposes. It may be impossible to find fractions 
 <h1>Embedding Flash onto your webpage/Making a flash embed.</h1>
 <h2>Step 1</h2>
 <h3>have an html page to put this on.</h3>
-<p>so, you want to make your page have flash content? good choice. lets assume you have a blank html page.<br> and we'll assume you know how to make a basic html page.</p>
+<p>so, you want to make your page have flash content? good choice. lets assume you have a blank html page.<br> and we'll assume you know how to make a basic html 
+page.</p> 
 <p>or just copy what you see here and fill in the meta fields to fit your custom case.</p>
+<img src="images/code1.jpg" alt="a text editor with some code. the code has a doctype, html, head and meta blocks. the meta blocks are inside the head block and before the 
+ body block where some header text and paragraph text blocks are. there is not much to the html page currently and no flash embed is there.">
 <h2>Step 2</h2>
 <h3>upload your .SWF to your server's root.</h3>
 <p> simple really, you'll need your swf on your server in order to embed it in a page.</p>
 <h2>Step 3</h2>
 <h3>on your basic page, within the body, add the embed code.</h3>
-<p>code here</p>
+<p><pre> embed src="game.swf" quality="high" name="game.swf" width="550" height="400" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer"
+</pre></p>
+<img src="images/code2.jpg" alt="again, a text editor with some code. the code has a doctype, html, head and meta blocks. 
+the meta blocks are inside the head block and before the body block where some header text and paragraph text blocks are. there is not much to the html page currently
+but the flash embed has been added.">
+<p>you only really need the embed and the height and width. you can add the rest for funsies or if you have code  that uses the extra fields to apply them
+to the swf document.</p>
 <h2>Step 4</h2>
 <h3>host the page</h3>
-<p>step 4 desc</p>
+<p>however you do it, host the page online or with a localhost.</p>
 <h2>Step 5</h2>
-<h3>make it pretty</h3>
-<p>modern browers suck and dont display swf embeds unless you have ruffle. put a box around the embed to indicate something is there with a div and css</p>
+<h3>make it pretty (optional)</h3>
+<p>modern browers can suck and dont display swf embeds unless you have ruffle or if they do its to tell you
+that the plugin needed to see it isn't supported. put a box around the embed to indicate something is there with a div and css</p>
+<img src="images/code2.5.jpg" alt="a text editor with some code. the code has a doctype, html, head and meta blocks. 
+the meta blocks are inside the head block and before the body block where some header text and paragraph text blocks are. there is not much to the html page currently
+but the flash embed has been added and now has a CSS style for a blue border above the body tag in the head tag.">
+<p><pre>style>
+        .flashembed {
+           width: 550px;
+           height: 400px;
+           border: solid blue;
+           border-width: 3px;
+           padding: 3px;
+           margin: auto;
+        }
+/style</pre></p>
+<img src="images/code3.jpg" alt="a white html page is being rendered in a browser. the header and paragraph element are shown and they say 'Flash game' 
+and under that 'description of game'. these are placeholders and meant to be replaced by whoever follows this bad tutorial. the rest of the page is blank because
+no plugins or extensions that render swf files are installed, and the browser is hiding the embed.">
+<img src="images/code4/jpg" alt="a white html page is being rendered in a browser. the placeholder header and paragraph element are shown and they say 'Flash game' 
+and under that 'description of game'. to the right of that in the middle of the page is a blue hollow border around an empty part of the page. the embed inside the 
+blue box is not rendered. ">
+<img src="images/code5.jpg" alt="a white html page is being rendered in a browser. the placeholder header and paragraph element are shown and they say 'Flash game' 
+and under that 'description of game'. to the right of that is a blue hollow border. the page is rendering a swf file inside. the swf displays black text on a blue
+background that is german text from a video game.">
 <h2>Step 6</h2>
 <h3>done probably</h3>
+<p>this makes a very empty very basic page with just some text and the flash embed. <br>To display flash content, you'll need a browser old enough that supports plug-ins
+which are a different and older thing than extensions, <br>and get the adobe flash plugin. or you could get the lightspark flash player plug-in.<br> on a browser that does
+ not support plug-ins, try getting the Ruffle extension. Ruffle is probably the most compatable open source flash player replacement.<br> also, try and describe what
+the game is and what it looks like because flash content isn't always the easiest for text only users. although some old screen readers could tap into some text fields
+ on flash files, this was rarely supported by flash developers, regrettably.</p>
+<hr>
 
 <p>more stuff later.</p>
 
