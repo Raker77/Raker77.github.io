@@ -24,7 +24,7 @@ body {
         .flashembed {
            width: 700px;
            height: 500px;
-           border: solid #ffff66;
+           border: solid #e6e600;
            border-style: dashed;
            border-width: 5px;
            padding: 4px;
@@ -54,7 +54,15 @@ body {
    <div class ="flashembed">
    <embed src="shoc-s/586861_level01.swf" tabindex="0" quality="high" name="586861_level01.swf" width="700" height="450" type="application/x-shockwave-flash" 
    pluginspage="https://www.adobe.com/go/getflashplayer">
+   <!--all I  really need is the src and width and height. tabindex is supposed to indicate that the swf is in interactive element, but idk if it really works here. sorry.
+   quality is set in the hopes of the swf content using that value to set its quality but might need something else on the page (probably JS) to actually make it work
+   name is probably a remenant of this too where it  was used like an ID or class for JS. adding the type here is good. if nothing else, a carving in the stone of the
+   webpage that tells ya whats there. pluginspage used to be useful before 2019. not anymore. it just linked you to ad*be to get fp installed if it wasn't. this 
+   probably would need more setup here to actually function like that though. is vestigial now. but not even required.
+   this embed isn't tied up so if you have a flash browser it'll work as normal there, and if you've got a modern browser, a ruffle extension can polyfill it.
+   so works in both generations, which is ideal. could just self host ruffle here but won't work on old browsers so... nope.-->
    <figcaption><h6>Content description: flash embed of Epic Battle Fantasy: Adventure Story</h6></figcaption>
+   <!--if you can see this figcaption, it exists!!!!! but for some reason accessibility says the figure isn't labeled??-->
    <h6 style="text-align:right;">v1.4.2</h6>
    </div>
    </figure>
