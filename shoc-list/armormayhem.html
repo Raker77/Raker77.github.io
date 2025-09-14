@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Armor Mayhem | Flash</title>
+<!--tab title-->
+<base href="https://raker77.github.io/" target="_blank">
+<!--this page and the swf are at seperate folders. the embed will look into the folder with the html and not the swf folder without this-->
+<meta charset="UTF-8">
+<meta name="description" content="a webpage with flash content.">
+<meta name="keywords" content="adobe flash, flash, swf, ruffle, armor mayhem, space">
+<meta name="author" content="Raker77">
+<!--fits page on mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--bg stuff 1 part CSS 1 part JS. body is default page .dark-mode is what it'll turn into on button press
+  the flash embed is just a pretty box since modern browsers are stupid and hide swf embeds completely so the page layout warps in response as if it were not there.
+  the notebox style is just. semi-suffering. so the textbox can be in view while playing without scrolling down as much-->
+<style>
+body {
+  padding: 25px;
+  background-color: AntiqueWhite;
+  color: black;
+}
+
+.dark-mode {
+  background-color: DimGrey;
+  color: White;
+}
+</style>
+   <style>
+        .flashembed {
+           width: 800px;
+           height: 500px;
+           border: solid #68ca73;
+           border-style: dashed;
+           border-width: 5px;
+           padding: 4px;
+           margin: auto;
+        }
+   </style>
+  <style>
+    @media (min-width: 768px) {
+    .notebox {
+      float: Right;
+      width: 30%;
+      border: solid Black;
+      border-width: 2px;
+      padding: 4px;
+      margin-right: 800px;
+    }
+    }
+  </style>
+<style>ul.instructions {list-style-type: square;}</style>
+</head>
+<body>
+<!--its a span so we can cut out the nav from the css BG. a div makes a too long cutout and if nothing is cut out then the link text does not contrast
+  with the bg colour well and might as well be invisible. which isn't good for navigation-->
+<nav>
+<span style="background-color:White;">
+<a href="index.html" target="_self">&#x2800;&#xFE0F;Back to Main&#x2800;&#xFE0F;</a> <span style ="color:black;">|</span>
+<a href="/shoc-index.html" target="_self">&#x2800;&#xFE0F;Back to Index&#x2800;&#xFE0F;</a></span>
+</nav>
+<!--a figure should probably not be used here. usually for images, not flash embeds. I used it just so I could have a little caption tied to the same width as the
+  embed without doing insane float hand-lineups like the notebox.-->
+   <figure>
+   <div class ="flashembed">
+   <embed src="shoc-s/armor-mayhem-10215.swf" tabindex="0" quality="high" name="armor-mayhem-10215.swf" width="800" height="500" type="application/x-shockwave-flash" 
+   pluginspage="https://www.adobe.com/go/getflashplayer">
+   <!--all I  really need is the src and width and height. tabindex is supposed to indicate that the swf is in interactive element, but idk if it really works here. sorry.
+   quality is set in the hopes of the swf content using that value to set its quality but might need something else on the page (probably JS) to actually make it work
+   name is probably a remenant of this too where it  was used like an ID or class for JS. adding the type here is good. if nothing else, a carving in the stone of the
+   webpage that tells ya whats there. pluginspage used to be useful before 2019. not anymore. it just linked you to ad*be to get fp installed if it wasn't. this 
+   probably would need more setup here to actually function like that though. is vestigial now. but not even required.
+   this embed isn't tied up so if you have a flash browser it'll work as normal there, and if you've got a modern browser, a ruffle extension can polyfill it.
+   so works in both generations, which is ideal. could just self host ruffle here but won't work on old browsers so... nope.-->
+   <figcaption><h6>Content description: flash embed of Armor mayhem</h6></figcaption>
+   <!--if you can see this figcaption, it exists!!!!! but for some reason accessibility says the figure isn't labeled??-->
+   <h6 style="text-align:right;">v1.3b</h6>
+   </div>
+   </figure>
+<br>
+<button onclick="fewlinejsdarklightmode()">Toggle Light/Dark mode</button>
+<!--js is at the bottom of the page. don't want too much js on this page or website, 
+but afaict light/dark mode can't be done otherwise. if it can, I'd like to just do it in pure CSS.-->
+<br>
+<br>
+<h1>Armor mayhem</h1>
+<p>Once upon a time...<br>Earth had no more energy left...<br>Companies searched for a new source of energy<br>After years, they found it.<br>On planet 01586.<br>
+They dropped from the sky<br>Invaded the planet<br>And found a miracle...<br>Infinite energy<br>They Fought to own it.<br>
+
+<br>Unlock weapons and maps as you progress to expand the game as you play.</p>
+<br>
+<h3>Author(s)</h3>
+<p>Louis Simon Ménard / Louissi (Developer)<br>
+Mathieu Goulet-Aubin (Level design, art, additional art)<br>
+Fionn Hodgson (music)<br>
+Stephen Matthew (NightKilla) (music)<br>
+Benjamin S Young (TheBenjerman)(music)
+Mick Lauer (Rice Pirate) (Narrator)<br>
+</p>
+
+<!--there IS a label here!!!! acessibility says its not labelled or something??-->
+<span class="notebox">
+<h2>Scratchpad for game</h2>
+<label for="temporary notes box">Write notes and reminders for the game above here <br>(temporary! May NOT save upon page reload!)</label>
+<textarea id="temporary notes box" name="temporary notes box" rows="7" cols="50">
+You can write information you need to keep track of from the game, here
+</textarea>
+</span>
+
+<h3>Other data</h3>
+<p><abbr title="Shockwave Flash">SWF</abbr> version: 10<br>Framerate: 40.0 fps<br>Stage size: 800x500<br><abbr title="ActionScript">AS</abbr> Version: 3<br>
+Game size: 11.1 MB<br>Release Date: 2011-01-07</p>
+
+<h2>Gameplay buttons </h2> 
+<!-- I ask the browser pretty please not to render as an emoji. unicode icon is fine, thanks. firefox still kind of draws it emoji-like, but its weird. as long as its
+  not the emoji..
+  Some mobile browsers just ignore this and render the emoji anyway. ;_;.-->
+<h1> ⌨ + &#x1F5B1;&#xFE0F; </h1>
+<p>Instructions<br>
+<br>
+You can change the controls in the main menu.<br>
+<br>
+Default Controls:<br>
+W: Jump<br>
+A,D: Move<br>
+S: Pick up things<br>
+E: Give orders<br>
+R: View Scoreboard<br>
+Q: Switch weapons<br>
+SPACE: Use adrenaline<br>
+Esc: Pause the game<br>
+</p>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<footer>
+<!-- the single JS for the Light/dark mode. a necessary evil.-->
+<script>
+function fewlinejsdarklightmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!--if you're not using JS while surfing the web, same here. I do my best to avoid bloating the site. everything can be read and played with if JS is off,
+  if you use the ruffle extension, it injects some JS I think so you'll need it on if you're trying to play the swfs here on a modern browser.-->
+<noscript><mark>Hey, no javascript, nice. this site does not utilize javascript to serve content at the moment. <br>Only Light/Dark toggle uses any JS, which is not content, nor does it restrict content from being viewed. <br>
+  no content will be behind use of
+javascript.</mark></noscript>
+
+<hr>
+<hr>
+<h2>Privacy Policy</h2>
+<p>In no uncertain terms, this website does not intentionally collect or store any data from the user, and the author of this and other related pages does not intend, want, or request, in any way, any data from
+the user.<br> If data is found to be collected, please contact github to request them to remove, expunge, or modify any data you believe to have been collected, as the author of this and related pages does not
+implement or request from github, any features that would collect any data.<br>
+If any data is transmitted to the author or editor of this page anyway, it will be immediately and irrevocably be destroyed.<br> use of extensions or plugins may cause save data or game data to be stored to your PC, but not to this webserver.</p>
+
+<h2>Machine learning Policy</h2>
+<p> This website does NOT permit the use of LLM, machine learning, or generative models to train upon its contents. Please be respectful.</p>
+<hr>
+<hr>
+<h2>Ad-blocker and privacy extension policy</h2>
+<!--keep your privacy please. I do not want to know about you. be free from watchful eyes with evil intent.-->
+<p> Please make sure your ad-blocker and privacy extensions REMAIN enabled.</p>
+<hr>
+<p style="text-align:right;">2025-09-13</p>
+</footer>
+</body>
+</html>
