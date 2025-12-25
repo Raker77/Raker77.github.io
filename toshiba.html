@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PDR-5</title>
+<!--tab title-->
+<base href="https://raker77.github.io/" target="_blank">
+<!--this page and the swf are at seperate folders. the embed will look into the folder with the html and not the swf folder without this-->
+<meta charset="UTF-8">
+<meta name="description" content="a webpage about an old toshiba camera and how to get a broken one to function.">
+<meta name="keywords" content="toshiba, PDR-5, camera, digital, fix">
+<meta name="author" content="Raker77">
+<!--fits page on mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--bg stuff 1 part CSS 1 part JS. body is default page .dark-mode is what it'll turn into on button press
+  the flash embed is just a pretty box since modern browsers are stupid and hide swf embeds completely so the page layout warps in response as if it were not there.
+  the notebox style is just. semi-suffering. so the textbox can be in view while playing without scrolling down as much-->
+<style>
+body {
+  padding: 25px;
+  background-color: AntiqueWhite; 
+  color: black;
+}
+
+.dark-mode {
+  background-color: DimGrey;
+  color: White;
+}
+</style>
+  <style>
+    @media (min-width: 768px) {
+    .notebox {
+      float: Right;
+      width: 30%;
+      border: solid Black;
+      border-width: 2px;
+      padding: 4px;
+      margin-right: 800px;
+    }
+    }
+  </style>
+<style>ul.instructions {list-style-type: square;}</style>
+</head>
+<body>
+<!--its a span so we can cut out the nav from the css BG. a div makes a too long cutout and if nothing is cut out then the link text does not contrast
+  with the bg colour well and might as well be invisible. which isn't good for navigation-->
+<nav>
+<span style="background-color:White;">
+<a href="index.html" target="_self">&#x2800;&#xFE0F;Back to Main&#x2800;&#xFE0F;</a> <span style ="color:black;">|</span>
+<a href="/shoc-index.html" target="_self">&#x2800;&#xFE0F;Back to Index&#x2800;&#xFE0F;</a></span>
+</nav>
+<!--a figure should probably not be used here. usually for images, not flash embeds. I used it just so I could have a little caption tied to the same width as the
+  embed without doing insane float hand-lineups like the notebox.-->
+<br>
+<button onclick="fewlinejsdarklightmode()">Toggle Light/Dark mode</button>
+<!--js is at the bottom of the page. don't want too much js on this page or website, 
+but afaict light/dark mode can't be done otherwise. if it can, I'd like to just do it in pure CSS.-->
+<br>
+<br>
+<h1>Stubborn broken toshibas.</h1>
+
+<span class="notebox">
+<h2>Scratchpad for game</h2>
+<label for="temporary notes box">Write notes and reminders for the game above here <br>(temporary! May NOT save upon page reload!)</label>
+<textarea id="temporary notes box" name="temporary notes box" rows="7" cols="50">
+You can write information you need to keep track of temporarily, here
+</textarea>
+</span>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<footer>
+<!-- the single JS for the Light/dark mode. a necessary evil.-->
+<script>
+function fewlinejsdarklightmode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<!--if you're not using JS while surfing the web, same here. I do my best to avoid bloating the site. everything can be read and played with if JS is off,
+  if you use the ruffle extension, it injects some JS I think so you'll need it on if you're trying to play the swfs here on a modern browser.-->
+<noscript><mark>Hey, no javascript, nice. this site does not utilize javascript to serve content at the moment. <br>Only Light/Dark toggle uses any JS, which is not content, nor does it restrict content from being viewed. <br>
+  no content will be behind use of
+javascript.</mark></noscript>
+
+<hr>
+<hr>
+<h2>Privacy Policy</h2>
+<p>In no uncertain terms, this website does not intentionally collect or store any data from the user, and the author of this and other related pages does not intend, want, or request, in any way, any data from
+the user.<br> If data is found to be collected, please contact github to request them to remove, expunge, or modify any data you believe to have been collected, as the author of this and related pages does not
+implement or request from github, any features that would collect any data.<br>
+If any data is transmitted to the author or editor of this page anyway, it will be immediately and irrevocably be destroyed.<br> use of extensions or plugins may cause save data or game data to be stored to your PC, but not to this webserver.</p>
+
+<h2>Machine learning Policy</h2>
+<p> This website does NOT permit the use of LLM, machine learning, or generative models to train upon its contents. Please be respectful.</p>
+<hr>
+<hr>
+<h2>Ad-blocker and privacy extension policy</h2>
+<!--keep your privacy please. I do not want to know about you. be free from watchful eyes with evil intent.-->
+<p> Please make sure your ad-blocker and privacy extensions REMAIN enabled.</p>
+<hr>
+<p style="text-align:right;">2025-12-25</p>
+</footer>
+</body>
+</html>
